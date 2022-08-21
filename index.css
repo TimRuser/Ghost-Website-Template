@@ -6,7 +6,7 @@
     font-family: 'Inter', sans-serif;
     --primary: #a890ff;
     --primary-light: #bba8ff;
-    --primary-dark: #736698;
+    --primary-dark: #8778b3;
     --primary-text: #9c88e7;
     
     --secondary: #a5a5a5;
@@ -17,13 +17,13 @@
     --title-grey: #5c5c5c;
     --title-dark-grey: #444444;
 
-    --background: #f8f8f8;
-    --background-secondary: #f3f2f2;
+    --background: #fcfcfc;
+    --background-secondary: #f7f7f7;
 }
 
 /* ---- Header ---- */
 nav {
-    position: sticky;
+    position: fixed;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -32,12 +32,16 @@ nav {
     top: 0;
     z-index: 1;
     border: 1px transparent;
-    border-radius: 12px;;
+    border-radius: 20px;
+    width: 90%;
+    margin: 1rem auto;
+    left: 50%;
+    transform: translate(-50%, 0);
 }
 nav i {
     position: relative;
     display: block;
-    top: 2.75rem;
+    top: 2.5rem;
     left: 3rem;
     color: var(--main-title-grey);
 }
@@ -69,7 +73,7 @@ nav li {
 .startpage {
     display: block;
     position: relative;
-    margin: 5rem 0;
+    margin: 10rem 0;
 }
 .startpage .startpage-content {
     position: relative;
@@ -201,6 +205,7 @@ nav li {
     flex-direction: column;
     width: 13vw;
     align-content: space-between;
+    cursor: pointer;
 }
 .installation-item:hover {
     background-color: var(--background-secondary);
@@ -228,6 +233,7 @@ nav li {
     font-size: 20px;
 }
 
+/* ---- Installation Popup ---- */
 .installation-popup-wrapper {
     z-index: 10;
     position: fixed;
@@ -252,9 +258,9 @@ nav li {
     position: fixed;
     width: 60vw;
     background-color: var(--background);
-    border: 0.5px solid var(--secondary-light);
+    border: 1px solid transparent;
     border-radius: 10px;
-    box-shadow: 0 0 2000px white;
+    box-shadow: 0 0 2000px var(--secondary-light);
     display: flex;
     flex-direction: column;
 }
@@ -313,6 +319,9 @@ Footer li {
     font-size: 1.05rem;
     font-weight: 600;
 }
+
+/* ---- Syntax ---- */
+
 
 /* ---- General ---- */
 p, h3, h1, ul, li {
