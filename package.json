@@ -4,7 +4,7 @@
   "description": "Website template for software projects",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "babel src -d ."
   },
   "repository": {
     "type": "git",
@@ -22,6 +22,8 @@
   },
   "homepage": "https://github.com/Alphinux/Ghost-Website-Template#readme",
   "devDependencies": {
+    "@babel/cli": "^7.18.10",
+    "@babel/core": "^7.18.10",
     "@babel/preset-react": "^7.18.6"
   }
 }
