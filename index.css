@@ -176,19 +176,43 @@ nav li {
 .installation h1 {
     color: var(--main-title-grey);
     font-size: 48px;
+    margin: 2rem 0 3rem 0;
 }
 
 .installation-wrapper {
     display: flex;
     justify-content: center;
-    margin: 5rem 0;
+    margin: auto;
 }
 .installation-item {
     background-color: var(--background);
     margin: 0 0.8rem 0 0.8rem;
-    padding: 1.2rem 1rem 2rem 1rem;
+    padding: 1.2rem 1rem 1rem 1rem;
     border: 1px transparent;
+    box-shadow: 3px 3px 12px var(--secondary-light);
     border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 13vw;
+    align-content: space-between;
+}
+.installation-os-wrapper {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.installation-item-icon {
+    margin: 0.5rem auto 0.5rem auto;
+}
+.installation-item-plus {
+    align-self: flex-end;
+    margin: 10px 0 0 10px;
+    position: relative;
+}
+.installation-item p {
+    font-weight: 600;
+    font-size: 20px;
 }
 
 /* ---- Footer ---- */

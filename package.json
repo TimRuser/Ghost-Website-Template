@@ -1,0 +1,27 @@
+{
+  "name": "ghost-website-template",
+  "version": "1.0.0",
+  "description": "Website template for software projects",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alphinux/Ghost-Website-Template.git"
+  },
+  "keywords": [
+    "web",
+    "html",
+    "css"
+  ],
+  "author": "Tim Ruser",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Alphinux/Ghost-Website-Template/issues"
+  },
+  "homepage": "https://github.com/Alphinux/Ghost-Website-Template#readme",
+  "devDependencies": {
+    "@babel/preset-react": "^7.18.6"
+  }
+}
