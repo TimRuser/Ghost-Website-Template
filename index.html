@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="index.css">
     <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
     <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
-    <script src="index.js"></script>t
+    <script src="index.js" defer></script>
 </head>
 <body>
     <div class="wrapper">
@@ -69,21 +69,21 @@
         <div class="installation">
             <h1>How to install</h1>
             <div class="installation-wrapper">
-                <div class="installation-item">
+                <div class="installation-item" onclick="openInstall('Linux')">
                     <div class="installation-os-wrapper">
                         <i class="fa-brands fa-linux fa-4x installation-item-icon"></i>
                         <p>Linux</p>
                     </div>
                     <i class="fa-solid fa-plus installation-item-plus"></i>
                 </div>
-                <div class="installation-item">
+                <div class="installation-item" onclick="openInstall('Windows')">
                     <div class="installation-os-wrapper">
                         <i class="fa-brands fa-windows fa-4x installation-item-icon"></i>
                         <p>Windows</p>
                     </div>
                     <i class="fa-solid fa-plus installation-item-plus"></i>
                 </div>
-                <div class="installation-item">
+                <div class="installation-item" onclick="openInstall('MacOS')">
                     <div class="installation-os-wrapper">
                         <i class="fa-brands fa-apple fa-4x installation-item-icon"></i>
                         <p>MacOS</p>
@@ -92,7 +92,6 @@
                 </div>
             </div>
         </div>
-        <div id="react-install-root"></div>
         <footer>
             <ul>
                 <li><a class="footer-button" href="#support">Support</a></li>
@@ -100,5 +99,6 @@
             </ul>
         </footer>
     </div>
+    <div id="react-install-root" class="installation-popup-wrapper"></div>
 </body>
 </html>

@@ -6,6 +6,7 @@
     font-family: 'Inter', sans-serif;
     --primary: #a890ff;
     --primary-light: #bba8ff;
+    --primary-dark: #736698;
     --primary-text: #9c88e7;
     
     --secondary: #a5a5a5;
@@ -17,6 +18,7 @@
     --title-dark-grey: #444444;
 
     --background: #f8f8f8;
+    --background-secondary: #f3f2f2;
 }
 
 /* ---- Header ---- */
@@ -156,7 +158,9 @@ nav li {
     flex-wrap: wrap;
     justify-content: center;
     align-items: flex-end;
-    cursor: pointer;
+}
+.features-item:hover {
+    background-color: var(--background-secondary)
 }
 .features-item-text {
     align-self: flex-start;
@@ -166,7 +170,9 @@ nav li {
     align-items: flex-end;
     padding-top: 2rem;
 }
-
+.features-item:hover .features-icon {
+    color: var(--primary-dark)
+}
 /* ---- Installation ---- */
 .installation {
     display: block;
@@ -196,6 +202,9 @@ nav li {
     width: 13vw;
     align-content: space-between;
 }
+.installation-item:hover {
+    background-color: var(--background-secondary);
+}
 .installation-os-wrapper {
     margin: auto;
     display: flex;
@@ -204,6 +213,10 @@ nav li {
 }
 .installation-item-icon {
     margin: 0.5rem auto 0.5rem auto;
+    color: var(--title-dark-grey)
+}
+.installation-item:hover .installation-item-icon {
+    color: var(--primary-dark)
 }
 .installation-item-plus {
     align-self: flex-end;
@@ -213,6 +226,62 @@ nav li {
 .installation-item p {
     font-weight: 600;
     font-size: 20px;
+}
+
+.installation-popup-wrapper {
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #c9c9c975;
+    visibility: hidden;
+    backdrop-filter: blur(3px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.installation-popup-root {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.installation-popup {
+    z-index: 11;
+    position: fixed;
+    width: 60vw;
+    background-color: var(--background);
+    border: 0.5px solid var(--secondary-light);
+    border-radius: 10px;
+    box-shadow: 0 0 2000px white;
+    display: flex;
+    flex-direction: column;
+}
+.installation-popup-x {
+    position: absolute;
+    align-self: flex-end;
+    margin: 1rem 1rem 0 0;
+    color: var(--title-dark-grey);
+    cursor: pointer;
+}
+.installation-popup-content {
+    margin: 2rem 0;
+}
+.installation-popup-content h1 {
+    margin-bottom: 1rem;
+    color: var(--main-title-grey)
+}
+.installation-popup-content p {
+    font-size: larger;
+}
+.installation-popup-background {
+    position: fixed;
+    z-index: -9;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
 }
 
 /* ---- Footer ---- */
